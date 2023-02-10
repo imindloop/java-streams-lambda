@@ -1,15 +1,14 @@
-package section2.step5execises;
+package section2.step5exercises;
 
 import java.util.List;
 
-public class PrintCourseNamesContainingWordSpring {
+public class PrintCourseNamesContainingMinimumFourLetters {
 
     public static void main(String[] args) {
         List<String> courseNames = List.of("Spring", "Spring Boot", "API", "Microservices", "AWS", "PCF", "Azure", "Docker", "Kubernetes");
 
         courseNames.stream()
-                .filter(name -> name.contains("Spring"))
+                .filter(courseName -> courseName.length() > 4)
                 .forEach(System.out::println);
     }
-
 }

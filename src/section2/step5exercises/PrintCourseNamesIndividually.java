@@ -1,4 +1,4 @@
-package section2.step5execises;
+package section2.step5exercises;
 
 import java.util.List;
 
